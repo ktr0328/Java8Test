@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 /**
  * Created by ktr on 2017/06/13.
  */
-public class patternList {
+public class PatternList {
     public static void main(String[] args) {
         int SIZE = 20;
 

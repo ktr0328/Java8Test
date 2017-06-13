@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 /**
  * Created by ktr on 2017/06/13.
  */
-public class patternIterate {
+public class PatternIterate {
     public static void main(String[] args) {
         Stream.iterate(0, i -> ++i)
             .limit(20)
@@ -14,7 +14,7 @@ public class patternIterate {
             .distinct()
             .map(i -> i * 10)
             .sorted((o1, o2) -> o2 - o1)
-            .map(patternIterate::hoge)
+            .map(PatternIterate::hoge)
             .forEach(System.out::println);
     }
 

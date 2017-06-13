@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 /**
  * Created by ktr on 2017/06/13.
  */
-public class patternAnti {
+public class PatternAnti {
     public static void main(String[] args) {
         int SIZE = 20;
         int[] fb = IntStream.rangeClosed(1, SIZE).toArray();

@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 /**
  * Created by ktr on 2017/06/13.
  */
-public class patternArray {
+public class PatternArray {
     public static void main(String[] args) {
         int SIZE = 20;
 
@@ -24,6 +24,8 @@ public class patternArray {
         int[] fb = IntStream.rangeClosed(1, SIZE).toArray();
 
         // 出力
-        Arrays.stream(fb).boxed().map(fizzBuzzHelper).forEach(System.out::println);
+        Arrays.stream(fb).boxed()
+            .map(fizzBuzzHelper)
+            .forEach(System.out::println);
     }
 }
