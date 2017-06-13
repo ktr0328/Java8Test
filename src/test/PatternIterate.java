@@ -7,6 +7,12 @@ import java.util.stream.Stream;
  */
 public class PatternIterate {
     public static void main(String[] args) {
+        /*
+         * 連結し放題
+         * 文章として読むことができる利点が大きい
+         * for文の中にこれが書かれると思うと吐き気が
+         */
+
         Stream.iterate(0, i -> ++i)
             .limit(20)
             .filter(i -> i > 10)

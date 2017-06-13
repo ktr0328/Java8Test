@@ -8,6 +8,11 @@ import java.util.stream.Stream;
  */
 public class PredicateTest {
     public static void main(String[] args) {
+        /*
+         * 条件式と一緒
+         * 使いどころが微妙な気がしなくもない
+         */
+
         // ラムダなし
         Predicate<Integer> preTest = new Predicate<Integer>() {
             @Override

@@ -10,10 +10,20 @@ import java.util.stream.Stream;
  */
 public class FunctionTest {
     public static void main(String[] args) {
+        /*
+         * 型 hoge() {}と一緒
+         * 戻り値がもらえる
+         * 連結もできる
+         */
+
         // hashcodeを返すFunction
         Function<String, Integer> func1 = String::hashCode;
         int hash = func1.apply("あうあうあう");
         System.out.println(hash);
+        // Function連結
+        System.out.println(func1.andThen(e -> "@" + e).apply("あうあうあう"));
+
+        System.out.println("--------------------------------");
 
         // 1から数値までを足すFunction
         Function<Integer, Integer> func2 = num -> {
@@ -23,8 +33,10 @@ public class FunctionTest {
             return opt.orElse(-1);
         };
 
-        System.out.println("orElse : " + func2.apply(0));
-        System.out.println("isPresent : " + func2.apply(100));
+        System.out.println("--------------------------------");
+
+        System.out.println("orElse : " + func2.apply(0)); // -1
+        System.out.println("isPresent : " + func2.apply(100)); // 5050
 
         // (1) + (1 + 2) + (1 + 2 + 3) = 10
         System.out.println(Stream.of(1, 2, 3).map(func2).reduce((v1, v2) -> v1 + v2).orElse(-1));

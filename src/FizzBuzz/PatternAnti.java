@@ -11,6 +11,11 @@ public class PatternAnti {
         int SIZE = 20;
         int[] fb = IntStream.rangeClosed(1, SIZE).toArray();
 
+        /*
+          アンチパターン
+          文章として読めないものはよろしくないと思います
+          map使いましょう
+         */
         Arrays.stream(fb).forEach(i -> {
             if (i % 15 == 0) System.out.println("FizzBuzz");
             else if (i % 3 == 0) System.out.println("Fizz");

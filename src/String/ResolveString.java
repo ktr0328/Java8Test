@@ -12,7 +12,9 @@ public class ResolveString {
             .map(Character::toChars)
             .forEach(System.out::println);
 
-        // String => IntStream => Stream => char[] => output
-        // 結論 : めんどくさいけどできなくはないがパフォーマンスがー
+        /*
+         * String => IntStream => Stream => char[] => output
+         * 結論 : めんどくさいけどできなくはないがパフォーマンス的にどうなんでしょう
+         */
     }
 }

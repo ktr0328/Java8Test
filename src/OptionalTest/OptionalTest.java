@@ -7,7 +7,12 @@ import java.util.Optional;
  */
 public class OptionalTest {
     public static void main(String[] args) {
-        // null安全
+        /*
+         * null安全
+         * nullかもしれないものをラッピングする
+         * 中身がほしい時にラップを剥がして使う
+         * 剥がした時に中身がなかったら処理しないとかそんなことも可能
+         */
         Optional<String> opt1 = Optional.ofNullable("のっとぬる");
         Optional<String> opt2 = Optional.ofNullable(null);
 

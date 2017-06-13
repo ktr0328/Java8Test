@@ -8,6 +8,11 @@ public class PatternNormal {
         int SIZE = 20;
         int[] fb = new int[SIZE];
 
+        /*
+         インデックスを操作するのが嫌なところ
+         気を抜くとすぐにArrayIndexOutOfBounds
+         i + 1 してるとこが特に気に食わない
+        */
         for (int i = 0; i < SIZE; i++) {
             fb[i] = i + 1;
         }

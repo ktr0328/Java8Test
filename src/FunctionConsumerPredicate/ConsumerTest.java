@@ -8,6 +8,11 @@ import java.util.stream.Stream;
  */
 public class ConsumerTest {
     public static void main(String[] args) {
+        /*
+         * 基本void hoge() {}と一緒
+         * 連結ができたり色々と便利な模様
+         */
+
         // ラムダなし
         Consumer<String> testCon = new Consumer<String>() {
             @Override
